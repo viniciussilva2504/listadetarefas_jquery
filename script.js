@@ -13,7 +13,7 @@ $(document).ready(function() {
             $('#taskInput').val(''); // Limpa o campo de input
         }
     });
-    
+
     // Marca a tarefa como completa ao clicar
     $('#taskList').on('click', 'li', function() {
         $(this).toggleClass('completed');

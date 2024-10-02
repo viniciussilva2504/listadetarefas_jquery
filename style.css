@@ -1,44 +1,71 @@
-/* Remove a margem e o preenchimento padrão de todos os elementos e 
-define o modelo de box-sizing para ajustar o preenchimento e as bordas dentro do tamanho total do elemento */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estiliza o corpo da página, definindo a fonte padrão, cor de fundo e 
-centralizando o conteúdo tanto vertical quanto horizontalmente */
 body {
-    font-family: Arial, sans-serif; /* Define a fonte padrão */
-    background-color: #f4f4f4; /* Define a cor de fundo da página */
-    display: flex; /* Utiliza flexbox para facilitar a centralização */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    height: 100vh; /* Define a altura da tela como 100% da altura da viewport */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-/* Estiliza o container principal da lista de tarefas */
 .container {
-    background-color: white; /* Define a cor de fundo branca para o container */
-    padding: 20px; /* Adiciona espaçamento interno ao container */
-    border-radius: 10px; /* Arredonda as bordas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao redor do container */
-    width: 400px; /* Define uma largura fixa para o container */
-    text-align: center; /* Centraliza o conteúdo dentro do container */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
 }
 
-/* Estiliza o título (h1) da página */
 h1 {
-    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    margin-bottom: 20px;
 }
 
-/* Estiliza o formulário, principalmente para adicionar espaçamento */
 form {
-    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do formulário */
+    margin-bottom: 20px;
 }
 
-/* Estiliza o campo de input de texto */
 input[type="text"] {
-    width: 70%; 
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
 }
-/*Define a largura do input como 70%*/
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
